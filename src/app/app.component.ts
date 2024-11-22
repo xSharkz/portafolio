@@ -1,12 +1,28 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { HeaderComponent } from './header/header.component';
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
+  imports: [CommonModule, FormsModule, HeaderComponent],
 })
 export class AppComponent {
-  title = 'portafolio';
+  title = "portafolio"
+
+  email: string = '';
+  descripcion: string = '';
+  isSending: boolean = false;
+  enviarFormulario() {
+    console.log('Formulario enviado', this.email, this.descripcion);
+    this.isSending = true;
+
+    setTimeout(() => {
+      this.isSending = false;
+      alert('Formulario enviado correctamente');
+    }, 2000);
+  }
 }
