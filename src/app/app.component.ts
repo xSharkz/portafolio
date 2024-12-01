@@ -14,15 +14,15 @@ export class AppComponent {
   title = "portafolio"
 
   email: string = '';
-  descripcion: string = '';
+  mensaje: string = '';
   isSending: boolean = false;
   enviarFormulario() {
-    console.log('Formulario enviado', this.email, this.descripcion);
+    console.log('Mensaje de contacto enviado', this.email, this.mensaje);
     this.isSending = true;
 
     setTimeout(() => {
       this.isSending = false;
-      alert('Formulario enviado correctamente');
+      alert('Mensaje de contacto enviado correctamente');
     }, 2000);
   }
 }

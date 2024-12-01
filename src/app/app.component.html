@@ -2,24 +2,45 @@
 <app-header></app-header>
 
 <!-- Sección de Descripción Personal -->
-<section id="descripcion-personal" class="bg-white p-8 mt-8 rounded-lg shadow-lg">
-  <h2 class="text-4xl font-bold text-gray-800">¡Hola! Soy Martin Becerra</h2>
-  <p class="text-xl text-gray-600 mt-4">Soy un estudiante de Ingenieria Civil en Computación e Informática de la Universidad Católica del Norte.</p>
+<section style="background-color: #1E429F;" id="descripcion-personal" class="bg-white p-8 mt-20 rounded-lg shadow-lg">
+  <!-- Imagen del Avatar -->
+  <img 
+    src="https://www.excelsior.com.mx/media/pictures/2024/11/21/3216015.jpg" 
+    alt="Avatar de Martin Becerra" 
+    class="w-32 h-32 rounded-full shadow-md border-4 border-white" 
+    style="object-fit: cover;" 
+  />
+  <h2 style="color: #F9FAFB;" class="text-4xl font-bold">¡Hola! Soy Martin Becerra</h2>
+  <p style="color: #E5E7EB;" class="text-xl mt-4">Tengo 22 años, nací el 04 de Septiembre de 2002 y nací en Antofagasta, soy estudiante de 4to año de Ingenieria Civil en Computación e Informática de la Universidad Católica del Norte y mi interes es desempeñarme como Programador Full Stack y aprender todo lo relacionado al Software.</p>
 </section>
 
 <!-- Sección de Habilidades Técnicas -->
-<section id="habilidades-tecnicas" class="bg-gray-100 p-8 mt-8 rounded-lg shadow-lg">
-  <h2 class="text-3xl font-bold text-gray-800">Habilidades Técnicas</h2>
-  <ul class="list-disc pl-8 text-gray-600 mt-4">
+<section style="background-color: #C3DDFD;" id="habilidades-tecnicas" class="bg-gray-100 p-8 mt-8 rounded-lg shadow-lg">
+  <h2 style="color: #111827;" class="text-3xl font-bold">Habilidades Técnicas</h2>
+  <ul style="color: #374151;" class="list-disc pl-8 mt-4">
+    <li>Python</li>
+    <li>Java</li>
+    <li>JavaCC</li>
+    <li>C</li>
+    <li>C++</li>
+    <li>C#</li>
     <li>React</li>
     <li>Node.js</li>
     <li>Base de datos SQL y NoSQL</li>
   </ul>
 </section>
 
+<!-- Sección de Habilidades Blandas -->
+<section style="background-color: #1E429F;" id="habilidades-blandas" class="bg-gray-100 p-8 mt-8 rounded-lg shadow-lg">
+  <h2 style="color: #F9FAFB;" class="text-3xl font-bold">Habilidades Blandas</h2>
+  <div class="mt-4">
+    <p style="color: #E5E7EB;">Soy una persona con una marcada capacidad para relacionarse efectivamente con los demás, destaco por mi empatía, comunicación asertiva y colaboración en equipo. Escucho activamente, mostrando un genuino interés en comprender diferentes perspectivas, lo que me permite resolver conflictos de manera constructiva y promover un ambiente armonioso.</p>
+  </div>
+</section>
+
 <!-- Sección de Redes Sociales -->
-<section id="redes-sociales" class="bg-white p-8 mt-8 rounded-lg shadow-lg">
-  <h2 class="text-3xl font-bold text-gray-800">Sígueme en Redes Sociales</h2>
+<section style="background-color: #C3DDFD;" id="redes-sociales" class="bg-white p-8 mt-8 rounded-lg shadow-lg">
+  <h2 style="color: #111827;" class="text-3xl font-bold">Sígueme en Redes Sociales</h2>
   <div class="mt-4 flex space-x-4">
     <a href="https://instagram.com/mvrtinbr" class="text-blue-600 hover:text-blue-700" target="_blank">
       <i class="fab fa-instagram text-2xl"></i> Instagram
@@ -31,28 +52,28 @@
 </section>
 
 <!-- Sección de Proyectos -->
-<section id="proyectos" class="bg-gray-100 p-8 mt-8 rounded-lg shadow-lg">
-  <h2 class="text-3xl font-bold text-gray-800">Proyectos Destacados</h2>
+<section style="background-color: #1E429F;" id="proyectos" class="bg-gray-100 p-8 mt-8 rounded-lg shadow-lg">
+  <h2 style="color: #F9FAFB;" class="text-3xl font-bold">Proyectos Destacados</h2>
   <div class="mt-4">
-    <p class="text-gray-600">Estos son alguno de los proyectos que he desarrollado.</p>
-    <ul class="list-inside text-gray-600 mt-4">
-      <li>Proyecto 1: Desarrollo de un Videojuego en 3D Casual Single-Player de tipo Endless-Runner "Macarrun".</li>
-      <li>Proyecto 2: Desarrollo de una aplicación de comercio de tipo "Uber-Eats".</li>
+    <p style="color: #E5E7EB;">Estos son alguno de los proyectos que he desarrollado.</p>
+    <ul style="color: #E5E7EB;" class="list-inside mt-4">
+      <li>Proyecto 1: Desarrollo de un Videojuego en 3D Casual Single-Player de tipo Endless-Runner "Macarrun". Lider de Equipo.</li>
+      <li>Proyecto 2: Desarrollo de una aplicación de comercio de tipo "Uber-Eats". Validador de Requerimientos.</li>
     </ul>
   </div>
 </section>
 
 <!-- Sección de Contacto -->
-<section id="contacto" class="bg-white p-8 mt-8 rounded-lg shadow-lg">
-  <h2 class="text-3xl font-bold text-gray-800">Contacto</h2>
+<section style="background-color: #C3DDFD;" id="contacto" class="bg-white p-8 mt-8 rounded-lg shadow-lg">
+  <h2 style="color: #111827;" class="text-3xl font-bold">Contacto</h2>
   <form (ngSubmit)="enviarFormulario()" class="mt-6">
     <div class="mb-4">
-      <label for="email" class="block text-sm font-medium">Correo electrónico</label>
+      <label style="color: #374151;" for="email" class="block text-sm font-medium">Correo electrónico</label>
       <input id="email" type="email" [(ngModel)]="email" name="email" class="w-full p-2 border rounded-md" required />
     </div>
     <div class="mb-4">
-      <label for="descripcion" class="block text-sm font-medium">Descripción</label>
-      <textarea id="descripcion" [(ngModel)]="descripcion" name="descripcion" class="w-full p-2 border rounded-md" required></textarea>
+      <label style="color: #374151;" for="mensaje" class="block text-sm font-medium">Mensaje</label>
+      <textarea id="mensaje" [(ngModel)]="mensaje" name="mensaje" class="w-full p-2 border rounded-md" required></textarea>
     </div>
     <button type="submit" class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2" [disabled]="isSending">
       {{ isSending ? 'Enviando...' : 'Enviar' }}
