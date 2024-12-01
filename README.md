@@ -1,59 +1,82 @@
-# Portafolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.1.
+# Portafolio Personal
 
-## Development server
+Este es mi portafolio personal desarrollado con HTML, CSS, y JavaScript. Incluye una configuración personalizada de **Tailwind CSS** y **Flowbite** para estilos modernos y responsivos.
 
-To start a local development server, run:
+## Características
 
-```bash
-ng serve
-```
+- **Barra de navegación fija:** Acceso rápido a todas las secciones.
+- **Diseño moderno y responsivo:** Adaptable a cualquier dispositivo.
+- **Enlaces anclados:** Navegación fluida entre secciones.
+- **Secciones principales:**
+  - Sobre mí
+  - Habilidades técnicas
+  - Redes sociales
+  - Proyectos
+  - Contacto
+- **Personalización de estilos:** Usando Tailwind CSS y configuración personalizada.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Tecnologías Utilizadas
 
-## Code scaffolding
+- **HTML5:** Estructura principal.
+- **CSS3 y Tailwind CSS:** Para estilos personalizados.
+- **JavaScript:** Funcionalidades interactivas.
+- **Flowbite:** Componentes de interfaz de usuario predefinidos.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Requisitos Previos
 
-```bash
-ng generate component component-name
-```
+Asegúrate de tener instalado **Node.js** y **npm** antes de comenzar.  
+Puedes descargar Node.js desde [nodejs.org](https://nodejs.org).
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Instalación y Uso
 
-```bash
-ng generate --help
-```
+Sigue estos pasos para ejecutar el proyecto localmente:
 
-## Building
+1. **Clona el repositorio:**
+   ```bash
+   git clone https://github.com/xSharkz/portafolio.git
+   cd portafolio
+   ```
 
-To build the project run:
+2. **Instala las dependencias:**
+   Ejecuta el siguiente comando en la carpeta del proyecto:
+   ```bash
+   npm install
+   ```
 
-```bash
-ng build
-```
+3. **Compila los estilos de Tailwind CSS:**
+   Si necesitas compilar los estilos personalizados, usa el siguiente comando:
+   ```bash
+   npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+   ```
+   Esto generará los estilos en tiempo real mientras haces cambios.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+4. **Abre el proyecto en tu navegador:**
+   Si estás usando un servidor local como Live Server de VS Code, simplemente abre el archivo `index.html`. También puedes usar cualquier servidor HTTP para servir el proyecto.
 
-## Running unit tests
+## Estructura del Proyecto
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+- **`index.html`**: Archivo principal del proyecto.
+- **`tailwind.config.js`**: Configuración personalizada para Tailwind CSS.
+- **`src/input.css`**: Archivo base de estilos para Tailwind CSS.
+- **`dist/output.css`**: Estilos generados por Tailwind CSS.
+- **`node_modules/`**: Librerías necesarias instaladas con npm.
+- **`package.json`**: Lista de dependencias y scripts configurados.
 
-```bash
-ng test
-```
+## Personalización
 
-## Running end-to-end tests
+Puedes modificar los siguientes archivos para personalizar el proyecto:
 
-For end-to-end (e2e) testing, run:
+- **HTML (`index.html`)**: Cambia el contenido de las secciones.
+- **CSS (`src/input.css`)**: Añade o modifica clases de estilo de Tailwind.
+- **Config (`tailwind.config.js`)**: Ajusta las configuraciones de Tailwind CSS.
 
-```bash
-ng e2e
-```
+## Licencia
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Este proyecto está bajo la licencia [MIT](LICENSE).
 
-## Additional Resources
+## Autor
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- **Martin Becerra**  
+  Estudiante de Ingeniería Civil en Computación e Informática.  
+  Contacto: [Correo Electrónico](mailto:martin.becerra@alumnos.ucn.cl)
